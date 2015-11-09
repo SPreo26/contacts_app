@@ -1,0 +1,35 @@
+<h3> I am on the index page <h3>
+
+<p> These are the people we have to deal with:</p>
+
+<table class = outer>
+  <td>
+    <table class = inner>
+
+      <tr>
+        <td> First Name </td>
+        <td> Last Name </td>
+        <td> E-mail </td>
+        <td> Phone </td>
+      </tr>
+
+      <% @contacts_all.each do |contact| %>
+        <tr>
+          <td>
+            <%= "#{contact.first_name}" %>
+          </td>
+          <td>
+            <%= "#{contact.last_name}" %>
+          </td>
+          <td>
+            <%= "#{contact.email}" %>
+          </td>
+          <td>
+            <%= "#{contact.phone}" %>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </td>
+</table>
+
