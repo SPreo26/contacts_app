@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
-    get "/", to: "contacts#index"
+    get "/contacts/", to: "contacts#index"
+    post "/contacts", to: "contacts#index"
+    get "/contacts/new", to: 'contacts#new_contact_form'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,22 +1,25 @@
-<h3> I am on the index page <h3>
-
 <p> These are the people we have to deal with:</p>
 
-<table class = outer>
+<table class="outer margined">
   <td>
-    <table class = inner>
+    <table class = "inner">
 
       <tr>
-        <td> First Name </td>
-        <td> Last Name </td>
-        <td> E-mail </td>
-        <td> Phone </td>
+        <td class="header"> First Name </td>
+        <td class="header"> Middle Name </td>
+        <td class="header"> Last Name </td>
+        <td class="header"> E-mail </td>
+        <td class="header"> Phone </td>
+        <td class="header"> Bio </td>
       </tr>
 
       <% @contacts_all.each do |contact| %>
         <tr>
           <td>
             <%= "#{contact.first_name}" %>
+          </td>
+          <td>
+            <%= "#{contact.middle_name}" %>
           </td>
           <td>
             <%= "#{contact.last_name}" %>
@@ -27,9 +30,15 @@
           <td>
             <%= "#{contact.phone}" %>
           </td>
+          <td>
+            <%= "#{contact.bio}" %>
+          </td>
         </tr>
       <% end %>
     </table>
   </td>
 </table>
 
+<div class="button">
+  <button type="button" onclick="window.location.href='/contacts/new'">Add New Contact</button>
+</div>

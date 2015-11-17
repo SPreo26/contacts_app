@@ -13,14 +13,4 @@
  *= require_tree .
  *= require_self
  */
- table.outer {
-  border: 1px solid black;
-  border-collapse:collapse;
-}
  
-table.inner, table.inner td{
-  border: 1px solid black;
-  border-collapse:collapse;
-}
-
-body { background-color: yellow;}

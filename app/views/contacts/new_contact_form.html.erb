@@ -1,0 +1,77 @@
+<table class="margined">
+<%= form_tag '/contacts', method: :post do %>
+  <tr>
+    <div>
+      <td>
+        <%= label_tag "First Name" %>
+      </td>
+      <td>
+        <%= text_area_tag :first_name, "", class:'text_area' %>
+      </td>
+    </div>
+  </tr>
+
+  <tr>  
+    <div>
+      <td>
+        <%= label_tag "Middle Name" %>
+      </td>
+      <td>
+        <%= text_area_tag :middle_name, "", class:'text_area' %>
+      </td>
+    </div>
+  </tr>
+
+  <tr>  
+    <div>
+      <td>
+        <%= label_tag "Last Name" %>
+      </td>
+      <td>
+        <%= text_area_tag :last_name, "", class:'text_area' %>
+      </td>
+    </div>
+  </tr>
+
+  <tr>
+    <div>
+      <td> 
+        <%= label_tag "E-mail" %>
+      </td>
+      <td>
+        <%= text_area_tag :email, "", class:'text_area' %>
+      </td>
+    </div>
+  </tr>
+
+  <tr>
+    <div>
+      <td> 
+        <%= label_tag "Phone" %>
+      </td>
+      <td>
+        <%= text_area_tag :phone, "", class:'text_area' %>
+      </td>
+    </div>
+  </tr>
+
+  <tr>
+    <div>
+      <td> 
+        <%= label_tag "Bio" %>
+      </td>
+      <td>
+        <%= text_area_tag :bio, "", class:'big_text_area' %>
+      </td>
+    </div>
+  </tr>
+ 
+  <tr>
+    <td>
+      <div>
+        <%= submit_tag "Sub-meat" %>
+      </div>
+    </td>
+  </tr>
+<% end %>
+</table>
